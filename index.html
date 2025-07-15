@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tvd</title>
+
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-screen wallpaper">
+    <div class="click">
+        <h1>Click to enter</h1>
+    </div>
+    <pre>
+                           
+
+  _            _       _     
+ | |          | |     | |    
+ | |___   ____| |  ___| |__  
+ | __\ \ / / _` | / __| '_ \ 
+ | |_ \ V / (_| |_\__ \ | | |
+  \__| \_/ \__,_(_)___/_| |_|
+                             
+                             
+
+  </pre>
+  <div class="entered">
+    <div class="intial-container">
+    <div class="box-contain">
+      <div class="box-brrr">
+        <img src="kyle.png" class="pfp" alt="Operator PFP"/>
+        <h3><span style="color: red;">• </span>Kyle</h3>
+        <p>Deez nuts</p>
+        <p style="font-size:10px;">--Socials--</p>
+       
+        <a href="https://t.me/steps_is" target="_blank" rel="noopener noreferrer"><img src="telegram.png" height="30px" alt="Telegram" height="30px"></a>
+      </div>
+      <div class="box-brrr">
+        <img src="sha.png" class="pfp" alt="Pierce PFP"/>
+        <h3><span style="color: red;">• </span>Sha</h3>
+        <p>Baby hacker</p>
+        <p style="font-size:10px;">--Socials--</p>
+       
+        <a href="https://t.me/shasobiased" target="_blank" rel="noopener noreferrer"><img src="telegram.png" height="30px" alt="Telegram" height="30px"></a>
+      </div>
+    </div>
+
+    
+</div>
+<audio loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+<script>
+    const clickDiv = document.querySelector('.click');
+    const audio = document.querySelector('audio');
+
+    clickDiv.addEventListener('click', () => {
+        audio.volume = 0.01; // loud asf
+        audio.play();
+        clickDiv.classList.add('fade-out');
+        clickDiv.addEventListener('animationend', () => {
+            clickDiv.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
