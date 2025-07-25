@@ -2,58 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under Maintenance - tvd.sh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tvd.sh - Bio Link Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(120deg, #1a1a2e, #16213e);
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
       text-align: center;
     }
 
+    header {
+      padding: 40px 20px;
+    }
+
     .anime-img {
-      width: 250px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      max-width: 250px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
       margin-bottom: 20px;
     }
 
-    .title {
-      font-size: 2.5rem;
+    h1 {
+      font-size: 3rem;
       margin-bottom: 10px;
     }
 
-    .subtitle {
+    p {
       font-size: 1.2rem;
-      opacity: 0.9;
-      margin-bottom: 30px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto 30px;
     }
 
-    .status {
-      padding: 10px 20px;
-      background: #ffffff10;
-      border: 1px solid #ffffff30;
-      border-radius: 8px;
-      font-weight: bold;
-      letter-spacing: 1px;
+    .btn {
+      padding: 12px 28px;
+      font-size: 1rem;
+      background: #ff4b91;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #ff2e74;
+    }
+
+    .pricing-section {
+      background-color: #0f1733;
+      padding: 60px 20px;
+    }
+
+    .pricing-title {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .plan {
+      background: #1e1e2f;
+      padding: 30px;
+      border-radius: 16px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .plan h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .plan .price {
+      font-size: 2rem;
+      color: #ff4b91;
+      margin: 10px 0;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .plan ul li {
+      margin-bottom: 10px;
+      color: #aaa;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://media.discordapp.net/attachments/1391184257577390277/1398420138985918724/bf453f8c-1fa3-4125-8dba-6608daca174b-removebg-preview.png?ex=68854bbe&is=6883fa3e&hm=6af9e1d0d708dd586bba981015d4a9eb2b4125ba185f0ec7b45774361584201e&=&format=webp&quality=lossless&width=551&height=367" alt="Anime Character" class="anime-img">
+    <h1>Welcome to tvd.sh</h1>
+    <p>Your anime-inspired bio link service. Simple, stylish, and powered by creativity. Launching soon — join early!</p>
+    <a href="https://t.me/tvd_sh" class="btn">Join the Telegram</a>
+  </header>
 
-  <img src="https://media.discordapp.net/attachments/1398089272132763681/1398415240198230057/raw.png?ex=6885472e&is=6883f5ae&hm=e90e6157ec16307b8861489482f3abf07cbb0be02a458e7d91ec7cc90c1a1256&=&format=webp&quality=lossless&width=472&height=315" alt="Anime Girl" class="anime-img"> <!-- Replace this URL with your own image -->
+  <section class="pricing-section">
+    <div class="pricing-title">Choose Your Plan</div>
+    <div class="plans">
+      <div class="plan">
+        <h2>Purchase</h2>
+        <div class="price">$15/mo</div>
+        <ul>
+          <li>All Pro Features</li>
+          <li>Custom Domains</li>
+          <li>Affiliate Tools</li>
+          <li>Embedded Media</li>
+        </ul>
+        <a href="http://t.me/someguilty" class="btn">Buy</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="title">We're Under Maintenance</div>
-  <div class="subtitle">Even our anime assistant needs a break 🛠️</div>
-  <div class="status">We're working to launch tvd.sh as soon as possible!</div>
-
+  <footer>
+    &copy; 2025 tvd.sh • All rights reserved.
+  </footer>
 </body>
 </html>
