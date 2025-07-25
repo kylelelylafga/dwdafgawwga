@@ -14,19 +14,19 @@
 
     body {
       font-family: 'Rubik', sans-serif;
-      background: linear-gradient(120deg, #030303, #3b60c7);
+      background: linear-gradient(to bottom right, #1a1a2e, #3b60c7);
       color: #ffffff;
       text-align: center;
     }
 
     header {
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
     }
 
     .anime-img {
-      max-width: 250px;
+      max-width: 200px;
       border-radius: 16px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
       margin-bottom: 20px;
     }
 
@@ -36,80 +36,88 @@
     }
 
     p {
-      font-size: 1.2rem;
-      color: #ffffff;
+      font-size: 1.1rem;
+      color: #dddddd;
       max-width: 600px;
       margin: 0 auto 30px;
     }
 
     .btn {
-      padding: 12px 28px;
+      padding: 14px 32px;
       font-size: 1rem;
       background: #ff0062;
       color: white;
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
       text-decoration: none;
+      display: inline-block;
     }
 
     .btn:hover {
-      background: #ff2e74;
+      background: #e60056;
+      transform: scale(1.05);
     }
 
     .pricing-section {
-      background-color: #030303, #3b60c7;
-      padding: 60px 20px;
+      background-color: #10101a;
+      padding: 80px 20px;
     }
 
     .pricing-title {
-      font-size: 2rem;
-      margin-bottom: 40px;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
     }
 
     .plans {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
     }
 
     .plan {
-      background: #030303;
-      padding: 30px;
-      border-radius: 16px;
-      width: 280px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      background: #1c1c2e;
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
     }
 
     .plan h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 10px;
     }
 
     .plan .price {
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: #ff4b91;
-      margin: 10px 0;
+      margin: 15px 0;
     }
 
     .plan ul {
       list-style: none;
       padding: 0;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .plan ul li {
-      margin-bottom: 10px;
-      color: #aaa;
+      margin-bottom: 12px;
+      color: #bbb;
+      font-size: 0.95rem;
     }
 
     footer {
-      background: #000000;
-      padding: 20px;
+      background: #0a0a0f;
+      padding: 30px 20px;
       font-size: 0.9rem;
-      color: #666;
+      color: #888;
     }
   </style>
 </head>
@@ -122,10 +130,24 @@
   </header>
 
   <section class="pricing-section">
-    <div class="pricing-title">Choose Your Plan</div>
+    <div class="pricing-title">Pricing Plans</div>
     <div class="plans">
+      
+
       <div class="plan">
-        <h2>Purchase</h2>
+        <h2>Pro</h2>
+        <div class="price">$5/mo</div>
+        <ul>
+          <li>Unlimited Pages</li>
+          <li>Custom Themes</li>
+          <li>Priority Support</li>
+          <li>Advanced Analytics</li>
+        </ul>
+        <a href="#" class="btn">Go Pro</a>
+      </div>
+
+      <div class="plan">
+        <h2>Creator+</h2>
         <div class="price">$15/mo</div>
         <ul>
           <li>All Pro Features</li>
@@ -133,7 +155,7 @@
           <li>Affiliate Tools</li>
           <li>Embedded Media</li>
         </ul>
-        <a href="http://t.me/someguilty" class="btn">Buy</a>
+        <a href="http://t.me/someguilty" class="btn">Buy Now</a>
       </div>
     </div>
   </section>
